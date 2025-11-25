@@ -1,7 +1,7 @@
 import type { ComponentProps, Ref } from 'react';
 import { forwardRef } from 'react';
 
-import { IconButton } from '../../Button/index.js';
+import { IconButton } from '../../Button';
 
 type MessageToolbarItemProps = ComponentProps<typeof IconButton>;
 

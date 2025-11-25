@@ -1,7 +1,7 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 import { countries } from 'countries-list';
 
-import RequestTrialForm from './RequestTrialForm.js';
+import RequestTrialForm from './RequestTrialForm';
 
 export default {
   title: 'forms/RequestTrialForm',

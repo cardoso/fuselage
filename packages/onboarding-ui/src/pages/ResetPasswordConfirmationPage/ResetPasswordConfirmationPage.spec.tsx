@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import ResetPasswordConfirmationPage from './ResetPasswordConfirmationPage.js';
+import ResetPasswordConfirmationPage from './ResetPasswordConfirmationPage';
 
 it('renders without crashing', () => {
   render(<ResetPasswordConfirmationPage />);

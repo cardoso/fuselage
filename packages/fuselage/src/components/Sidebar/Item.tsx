@@ -1,9 +1,9 @@
 import type { AllHTMLAttributes, ComponentProps, ReactNode } from 'react';
 
-import type Box from '../Box/index.js';
-import { Icon as FuselageIcon } from '../Icon/index.js';
+import type Box from '../Box';
+import { Icon as FuselageIcon } from '../Icon';
 
-import { SidebarAction, SidebarActions } from './SidebarActions.js';
+import { SidebarAction, SidebarActions } from './SidebarActions';
 
 type SidebarItemProps = {
   selected?: boolean;

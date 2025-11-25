@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import CreateCloudWorkspacePage from './CreateCloudWorkspacePage.js';
+import CreateCloudWorkspacePage from './CreateCloudWorkspacePage';
 
 export default {
   title: 'pages/CreateCloudWorkspacePage',

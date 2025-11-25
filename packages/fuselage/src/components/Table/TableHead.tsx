@@ -1,8 +1,8 @@
 import { createContext } from 'react';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import type { TableProps } from './Table.js';
+import type { TableProps } from './Table';
 
 export const TableHeadContext = createContext(false);
 

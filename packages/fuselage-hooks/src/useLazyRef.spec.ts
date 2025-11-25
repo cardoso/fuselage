@@ -1,6 +1,4 @@
-import { it, expect, vi } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { useLazyRef } from './useLazyRef';
 
 it('returns the computed value immediately', () => {
@@ -12,7 +10,7 @@ it('returns the computed value immediately', () => {
 });
 
 it('runs the initializer once', () => {
-  const initializer = vi.fn();
+  const initializer = jest.fn();
 
   const { rerender } = renderHook(() => {
     useLazyRef(initializer);

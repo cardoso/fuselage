@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import LoaderPage from './LoaderPage.js';
+import LoaderPage from './LoaderPage';
 
 const subtitles = [
   'Bringing rocket to launch position',

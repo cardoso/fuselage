@@ -1,14 +1,14 @@
 import type { Ref, ReactNode, MouseEvent, AllHTMLAttributes } from 'react';
 import { forwardRef, memo } from 'react';
 
-import { prevent } from '../../helpers/prevent.js';
-import type { BoxProps } from '../Box/index.js';
-import type { IconProps } from '../Icon/index.js';
+import { prevent } from '../../helpers/prevent';
+import type { BoxProps } from '../Box';
+import type { IconProps } from '../Icon';
 
-import OptionAvatar from './OptionAvatar.js';
-import OptionColumn from './OptionColumn.js';
-import OptionContent from './OptionContent.js';
-import OptionIcon from './OptionIcon.js';
+import OptionAvatar from './OptionAvatar';
+import OptionColumn from './OptionColumn';
+import OptionContent from './OptionContent';
+import OptionIcon from './OptionIcon';
 
 export type OptionProps = {
   is?: BoxProps['is'];
@@ -24,16 +24,34 @@ export type OptionProps = {
   avatar?: ReactNode;
   title?: string;
   disabled?: boolean;
-  value?: string;
+  value?: string | number;
   variant?: 'danger' | 'success' | 'warning' | 'primary';
   onClick?: (event: MouseEvent<HTMLElement>) => void;
   description?: ReactNode;
-} & Omit<AllHTMLAttributes<HTMLElement>, 'label'>;
+} & Omit<
+  AllHTMLAttributes<HTMLElement>,
+  | 'is'
+  | 'id'
+  | 'children'
+  | 'label'
+  | 'selected'
+  | 'className'
+  | 'ref'
+  | 'icon'
+  | 'gap'
+  | 'avatar'
+  | 'title'
+  | 'disabled'
+  | 'value'
+  | 'variant'
+  | 'onClick'
+  | 'description'
+>;
 
 /**
  * The generic `Option` item of options. Can be freely used or inside the `Options` as well.
  */
-const Option = forwardRef(function Option(
+const Option = forwardRef<Element, OptionProps>(function Option(
   {
     is: Tag = 'li',
     id,

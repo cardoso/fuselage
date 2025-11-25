@@ -1,7 +1,6 @@
 import { withMatchMediaMock } from 'testing-utils/mocks/withMatchMediaMock';
-import { it, expect, beforeEach, afterEach } from 'vitest';
 
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { usePrefersReducedMotion } from './usePrefersReducedMotion';
 
 const setViewport = withMatchMediaMock();

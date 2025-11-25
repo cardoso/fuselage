@@ -1,4 +1,4 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
 import {
   TextInput,
@@ -13,7 +13,7 @@ import {
   TelephoneInput,
   NumberInput,
   UrlInput,
-} from '../Inputs/index.js';
+} from '../Inputs';
 
 import {
   Field,
@@ -24,12 +24,12 @@ import {
   FieldLabelInfo,
   FieldLink,
   FieldRow,
-} from './index.js';
+} from '.';
 
 export default {
   title: 'Inputs/Field',
   component: Field,
-} as Meta<typeof Field>;
+} satisfies Meta<typeof Field>;
 
 export const WithTextInput: StoryFn<typeof Field> = () => (
   <Field>

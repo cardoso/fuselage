@@ -1,3 +1,3 @@
-export * from './TableSelection.js';
-export * from './TableSelectionButton.js';
-export * from './TableSelectionButtonGroup.js';
+export * from './TableSelection';
+export * from './TableSelectionButton';
+export * from './TableSelectionButtonGroup';

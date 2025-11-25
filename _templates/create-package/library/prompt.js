@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   prompt: async ({ prompter }) => {
     const { package: packageName } = await prompter.prompt({
       type: 'input',

@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactElement } from 'react';
 
-import { Icon } from '../../index.js';
+import { Icon } from '../..';
 
 export const ThreadMessageIcon = ({
   ...props

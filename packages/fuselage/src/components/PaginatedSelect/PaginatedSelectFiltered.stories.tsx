@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import { Option, OptionDescription } from '../Option/index.js';
+import { Option, OptionDescription } from '../Option';
 
-import { PaginatedSelectFiltered } from './PaginatedSelectFiltered.js';
+import { PaginatedSelectFiltered } from './PaginatedSelectFiltered';
 
 export default {
   title: 'Inputs/PaginatedSelectFiltered',

@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import CreateNewPasswordPage from './CreateNewPasswordPage.js';
+import CreateNewPasswordPage from './CreateNewPasswordPage';
 
 it('renders without crashing', () => {
   render(

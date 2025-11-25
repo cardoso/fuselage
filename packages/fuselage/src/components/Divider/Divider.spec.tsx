@@ -1,8 +1,8 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import * as stories from './Divider.stories.js';
+import * as stories from './Divider.stories';
 
 const { Default } = composeStories(stories);
 

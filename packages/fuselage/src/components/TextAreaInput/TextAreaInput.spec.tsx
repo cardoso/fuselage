@@ -1,6 +1,6 @@
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import { TextAreaInput } from './TextAreaInput.js';
+import { TextAreaInput } from './TextAreaInput';
 
 describe('[TextAreaInput]', () => {
   it('renders without crashing', () => {

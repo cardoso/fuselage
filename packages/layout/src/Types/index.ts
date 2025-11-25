@@ -1,3 +1,3 @@
-import type { FormPageLayoutStyleProps } from './FormPageLayoutStyleProps.js';
+import type { FormPageLayoutStyleProps } from './FormPageLayoutStyleProps';
 
-export type { FormPageLayoutStyleProps };
+export { FormPageLayoutStyleProps };

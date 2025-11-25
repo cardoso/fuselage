@@ -1,11 +1,4 @@
-import {
-  BLKSIZE,
-  CBANDS,
-  PSFB12,
-  PSFB21,
-  SBMAX_l,
-  SBMAX_s,
-} from './constants.js';
+import { BLKSIZE, CBANDS, PSFB12, PSFB21, SBMAX_l, SBMAX_s } from './constants';
 
 export class ATH {
   useAdjust = 0;

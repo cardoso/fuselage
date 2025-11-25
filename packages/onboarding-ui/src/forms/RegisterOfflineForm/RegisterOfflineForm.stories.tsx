@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import RegisterOfflineForm from './RegisterOfflineForm.js';
+import RegisterOfflineForm from './RegisterOfflineForm';
 
 export default {
   title: 'forms/RegisterOfflineForm',

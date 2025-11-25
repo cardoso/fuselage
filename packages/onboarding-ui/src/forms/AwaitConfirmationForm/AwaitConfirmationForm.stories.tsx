@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import AwaitConfirmationForm from './AwaitConfirmationForm.js';
+import AwaitConfirmationForm from './AwaitConfirmationForm';
 
 export default {
   title: 'forms/AwaitConfirmationForm',

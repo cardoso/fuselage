@@ -1,4 +1,4 @@
-import { SBMAX_l, SBMAX_s } from './constants.js';
+import { SBMAX_l, SBMAX_s } from './constants';
 
 export class NsPsy {
   last_en_subshort = Array.from({ length: 4 }, () => new Float32Array(9));

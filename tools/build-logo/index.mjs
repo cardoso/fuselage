@@ -7,11 +7,11 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import sharp from 'sharp';
 
-import { RocketChatLogo } from '../../packages/logo/dist/esm/index.js';
+import RocketChatLogo from '../../packages/logo/dist/cjs/RocketChatLogo/index.js';
 
 const renderAssets = async () => {
   const html = ReactDOMServer.renderToStaticMarkup(
-    React.createElement(RocketChatLogo),
+    React.createElement(RocketChatLogo.default),
   );
 
   const prettySvg = await prettier.format(html, { parser: 'html' });

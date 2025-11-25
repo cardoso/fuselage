@@ -7,7 +7,7 @@ import {
   useFieldReferencedByInput,
   useFieldReferencedByLabel,
   useFieldWrappedByInputLabel,
-} from '../Field/FieldContext.js';
+} from '../Field/FieldContext';
 
 type WithLabelId = { id?: string };
 

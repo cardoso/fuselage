@@ -1,9 +1,9 @@
-import { MessageLeftContainer } from '../MessageLeftContainer.js';
+import { MessageLeftContainer } from '../MessageLeftContainer';
 
-export * from './MessageSystem.js';
-export * from './MessageSystemBlock.js';
-export * from './MessageSystemBody.js';
-export * from './MessageSystemContainer.js';
-export * from './MessageSystemName.js';
-export * from './MessageSystemTimestamp.js';
+export * from './MessageSystem';
+export * from './MessageSystemBlock';
+export * from './MessageSystemBody';
+export * from './MessageSystemContainer';
+export * from './MessageSystemName';
+export * from './MessageSystemTimestamp';
 export const MessageSystemLeftContainer = MessageLeftContainer;

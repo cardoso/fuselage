@@ -1,12 +1,11 @@
 import { render } from '@testing-library/react';
-import { it, vi } from 'vitest';
 
-import CreateFirstMemberForm from './CreateFirstMemberForm.js';
+import CreateFirstMemberForm from './CreateFirstMemberForm';
 
-const onSubmit = vi.fn();
-const onBackButtonClick = vi.fn();
-const validateUsername = vi.fn();
-const validatePassword = vi.fn();
+const onSubmit = jest.fn();
+const onBackButtonClick = jest.fn();
+const validateUsername = jest.fn();
+const validatePassword = jest.fn();
 
 const props = {
   currentStep: 1,

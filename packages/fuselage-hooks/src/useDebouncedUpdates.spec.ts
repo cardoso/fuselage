@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { it, expect, vi, beforeAll } from 'vitest';
 
-import { renderHook, act } from './testing.ts';
+import { renderHook, act } from './testing';
 import { useDebouncedUpdates } from './useDebouncedUpdates';
 
 beforeAll(() => {
-  vi.useFakeTimers();
+  jest.useFakeTimers();
 });
 
 const delay = 100;
@@ -32,7 +31,7 @@ it('returns a debounced state dispatcher', () => {
   expect(result.current[0]).toBe(initialState);
 
   act(() => {
-    vi.advanceTimersByTime(delay);
+    jest.advanceTimersByTime(delay);
   });
 
   expect(result.current[0]).toBe(newState);

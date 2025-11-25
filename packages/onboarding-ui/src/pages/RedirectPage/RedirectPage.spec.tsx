@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react';
-import { it, vi } from 'vitest';
 
-import RedirectPage from './RedirectPage.js';
+import RedirectPage from './RedirectPage';
 
-const onRedirect = vi.fn();
+const onRedirect = jest.fn();
 
 it('renders without crashing', () => {
   render(

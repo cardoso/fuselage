@@ -1,7 +1,7 @@
 import { Box } from '@rocket.chat/fuselage';
 import type { ReactElement, ReactNode } from 'react';
 
-import { useDarkMode } from '../../DarkModeProvider.js';
+import { useDarkMode } from '../../DarkModeProvider';
 
 const HorizontalWizardLayoutCaption = ({
   children,

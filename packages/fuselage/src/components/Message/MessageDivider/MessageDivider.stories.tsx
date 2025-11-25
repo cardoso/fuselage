@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import Box from '../../Box/index.js';
+import Box from '../../Box';
 
-import { MessageDivider } from './MessageDivider.js';
+import { MessageDivider } from './MessageDivider';
 
 export default {
   title: 'Message/MessageDivider',

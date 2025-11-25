@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import NewAccountForm from './NewAccountForm.js';
+import NewAccountForm from './NewAccountForm';
 
 export default {
   title: 'forms/NewAccountForm',

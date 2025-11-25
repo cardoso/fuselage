@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import ResetPasswordForm from './ResetPasswordForm.js';
+import ResetPasswordForm from './ResetPasswordForm';
 
 it('renders without crashing', () => {
   render(

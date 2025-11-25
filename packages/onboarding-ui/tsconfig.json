@@ -2,24 +2,15 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "rootDirs": ["./src", "./.storybook"],
-    "target": "esnext",
-    "module": "nodenext",
+    "target": "ES5",
+    "module": "CommonJS",
     "outDir": "./dist",
     "esModuleInterop": true,
-    "types": [],
     "skipLibCheck": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "verbatimModuleSyntax": true,
-    "resolvePackageJsonExports": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "./src",
-    "./.jest/**/*",
-    "./.storybook/**/*",
-    "./vite.config.ts",
-    "./vitest.setup.ts"
-  ],
+  "include": ["./src", "./.jest/**/*", "./.storybook/**/*"],
   "exclude": ["./dist"]
 }

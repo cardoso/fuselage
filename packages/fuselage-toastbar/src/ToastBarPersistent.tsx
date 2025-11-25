@@ -1,7 +1,7 @@
 import { ToastBar } from '@rocket.chat/fuselage';
 import type { ReactElement } from 'react';
 
-import type { ToastBarPayload } from './ToastBarContext.js';
+import type { ToastBarPayload } from './ToastBarContext';
 
 const ToastBarPersistent = ({
   type,

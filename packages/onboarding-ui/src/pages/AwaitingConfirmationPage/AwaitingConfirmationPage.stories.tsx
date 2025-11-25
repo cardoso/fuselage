@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import AwaitingConfirmationPage from './AwaitingConfirmationPage.js';
+import AwaitingConfirmationPage from './AwaitingConfirmationPage';
 
 export default {
   title: 'pages/AwaitingConfirmationPage',

@@ -1,9 +1,9 @@
 import type { ElementType, HTMLAttributes } from 'react';
 
-import { prependClassName } from '../../helpers/prependClassName.js';
+import { prependClassName } from '../../helpers/prependClassName';
 
 export type BadgeProps = {
-  is?: ElementType;
+  is?: ElementType<HTMLAttributes<HTMLSpanElement>>;
   variant?: 'secondary' | 'primary' | 'danger' | 'warning' | 'ghost';
   small?: boolean;
   disabled?: boolean;

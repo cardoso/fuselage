@@ -1,1 +1,1 @@
-export { default } from './TaggedRocketChatLogo.js';
+export { default } from './TaggedRocketChatLogo';

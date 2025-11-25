@@ -1,7 +1,7 @@
 import { FieldError as FieldErrorComponent } from '@rocket.chat/fuselage';
 import type { ReactNode, ComponentProps } from 'react';
 
-import { useFieldDescriptorId } from './FieldContext.js';
+import { useFieldDescriptorId } from './FieldContext';
 
 type FieldErrorProps = { children: ReactNode } & ComponentProps<
   typeof FieldErrorComponent

@@ -1,4 +1,4 @@
-import { Mp3Encoder } from './lame/index.js';
+import { Mp3Encoder } from './lame';
 
 type Config = {
   numChannels?: number;

@@ -1,9 +1,9 @@
 import type { Keys as Icons } from '@rocket.chat/icons';
 import type { LinkHTMLAttributes, ReactNode } from 'react';
 
-import { appendClassName } from '../../helpers/appendClassName.js';
-import { patchChildren } from '../../helpers/patchChildren.js';
-import { Icon } from '../Icon/Icon.js';
+import { appendClassName } from '../../helpers/appendClassName';
+import { patchChildren } from '../../helpers/patchChildren';
+import { Icon } from '../Icon';
 
 export const SidebarLink = ({
   selected,

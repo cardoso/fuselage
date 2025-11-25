@@ -1,7 +1,7 @@
 import type { Ref } from 'react';
 import { forwardRef } from 'react';
 
-import Box, { type BoxProps } from '../Box/index.js';
+import Box, { type BoxProps } from '../Box';
 
 export type SelectInputPlaceholderProps = BoxProps;
 

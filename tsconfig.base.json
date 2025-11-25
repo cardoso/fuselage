@@ -12,8 +12,6 @@
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "verbatimModuleSyntax": true
+    "forceConsistentCasingInFileNames": true
   }
 }

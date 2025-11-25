@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import CheckYourEmailPage from './CheckYourEmailPage.js';
+import CheckYourEmailPage from './CheckYourEmailPage';
 
 export default {
   title: 'pages/CheckYourEmailPage',

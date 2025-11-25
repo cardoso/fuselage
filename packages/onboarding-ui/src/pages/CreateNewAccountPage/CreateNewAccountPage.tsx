@@ -9,8 +9,8 @@ import type { ReactElement } from 'react';
 import type { FieldPathValue, SubmitHandler, Validate } from 'react-hook-form';
 import { Trans, useTranslation } from 'react-i18next';
 
-import type { NewAccountPayload } from '../../forms/NewAccountForm/NewAccountForm.js';
-import NewAccountForm from '../../forms/NewAccountForm/index.js';
+import NewAccountForm from '../../forms/NewAccountForm';
+import type { NewAccountPayload } from '../../forms/NewAccountForm/NewAccountForm';
 
 type CreateNewAccountPageProps = {
   initialValues?: Omit<NewAccountPayload, 'password'>;

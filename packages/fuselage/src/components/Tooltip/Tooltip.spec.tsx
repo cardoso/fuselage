@@ -1,8 +1,6 @@
-import { expect, it } from 'vitest';
+import { render } from '../../testing';
 
-import { render } from '../../testing.js';
-
-import * as stories from './Tooltip.stories.js';
+import * as stories from './Tooltip.stories';
 
 const { Default, LightTooltip } = stories;
 

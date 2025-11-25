@@ -1,15 +1,15 @@
-import colors from '@rocket.chat/fuselage-tokens/colors.json' with { type: 'json' };
-import type { ReactElement } from 'react';
+import colors from '@rocket.chat/fuselage-tokens/colors.json';
+import type { HTMLAttributes, ReactElement } from 'react';
 
-import RocketChatLogo from '../RocketChatLogo/index.js';
+import RocketChatLogo from '../RocketChatLogo';
 
-import { LogoContainer, LogoTag } from './TaggedRocketChatLogo.styles.js';
+import { LogoContainer, LogoTag } from './TaggedRocketChatLogo.styles';
 
 type TaggedRocketChatLogoProps = {
   tagTitle?: string;
   tagBackground?: string;
   color?: string;
-} & React.HTMLAttributes<HTMLDivElement>;
+} & HTMLAttributes<HTMLDivElement>;
 
 const TaggedRocketChatLogo = ({
   tagTitle,

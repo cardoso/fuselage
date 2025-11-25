@@ -8,7 +8,7 @@ const WrapperPlugin = require('wrapper-webpack-plugin');
 
 const pkg = require('./package.json');
 
-export default (env, { mode = 'production' }) => ({
+module.exports = (env, { mode = 'production' }) => ({
   entry: {
     fuselage: path.resolve(__dirname, 'src/index.ts'),
   },

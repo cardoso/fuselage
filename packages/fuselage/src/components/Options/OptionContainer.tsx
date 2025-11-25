@@ -1,8 +1,8 @@
 import { forwardRef } from 'react';
 
-import Box, { type BoxProps } from '../Box/index.js';
-import Scrollable from '../Scrollable/index.js';
-import Tile from '../Tile/index.js';
+import Box, { type BoxProps } from '../Box';
+import Scrollable from '../Scrollable';
+import Tile from '../Tile';
 
 export type OptionContainerProps = BoxProps;
 

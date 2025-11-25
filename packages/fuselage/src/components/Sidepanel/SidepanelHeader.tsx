@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'react';
 
-import { SidepanelDivider } from './SidepanelDivider.js';
+import { SidepanelDivider } from './SidepanelDivider';
 
 export const SidepanelHeader = ({
   className,

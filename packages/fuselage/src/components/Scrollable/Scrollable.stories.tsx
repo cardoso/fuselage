@@ -1,10 +1,10 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import Box from '../Box/index.js';
-import Tile from '../Tile/index.js';
+import Box from '../Box';
+import Tile from '../Tile';
 
-import { Scrollable } from './Scrollable.js';
+import { Scrollable } from './Scrollable';
 
 export default {
   title: 'Layout/Scrollable',

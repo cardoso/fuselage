@@ -1,9 +1,9 @@
 import type { ComponentProps } from 'react';
 
-import WithErrorWrapper from '../../helpers/WithErrorWrapper.js';
-import { LabelInfo } from '../Label/LabelInfo.js';
+import WithErrorWrapper from '../../helpers/WithErrorWrapper';
+import { LabelInfo } from '../Label/LabelInfo';
 
-import { FieldContext } from './Field.js';
+import { FieldContext } from './Field';
 
 export type FieldLabelInfoProps = ComponentProps<typeof LabelInfo>;
 

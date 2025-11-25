@@ -1,8 +1,8 @@
 import type { ReactElement, ComponentProps } from 'react';
 import { memo } from 'react';
 
-import type { Icon } from '../index.js';
-import { IconButton } from '../index.js';
+import type { Icon } from '..';
+import { IconButton } from '..';
 
 type ContextualbarActionProps = {
   name: ComponentProps<typeof Icon>['name'];

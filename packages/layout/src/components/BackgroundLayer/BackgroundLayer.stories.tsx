@@ -1,7 +1,7 @@
 import { Tile } from '@rocket.chat/fuselage';
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import BackgroundLayer from './BackgroundLayer.js';
+import BackgroundLayer from './BackgroundLayer';
 
 export default {
   title: 'components/BackgroundLayer',

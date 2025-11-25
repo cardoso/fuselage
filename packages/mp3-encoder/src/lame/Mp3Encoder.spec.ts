@@ -1,11 +1,9 @@
-import { createHash } from 'node:crypto';
-import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { createHash } from 'crypto';
+import { readFile } from 'fs/promises';
+import { join } from 'path';
 
-import { test, expect, beforeAll } from 'vitest';
-
-import { Mp3Encoder } from './Mp3Encoder.js';
-import { WavHeader } from './WavHeader.js';
+import { Mp3Encoder } from './Mp3Encoder';
+import { WavHeader } from './WavHeader';
 
 let leftSampleBuffer: ArrayBufferLike;
 let rightSampleBuffer: ArrayBufferLike;

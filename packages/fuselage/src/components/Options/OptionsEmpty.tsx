@@ -1,9 +1,9 @@
 import { memo } from 'react';
 
-import Option from '../Option/Option.js';
+import Option from '../Option/Option';
 
 export type OptionsEmptyProps = {
-  customEmpty: string;
+  customEmpty?: string;
 };
 
 const OptionsEmpty = ({ customEmpty }: OptionsEmptyProps) => (

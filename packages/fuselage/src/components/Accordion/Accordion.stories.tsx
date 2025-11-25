@@ -1,10 +1,10 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import type { ComponentType } from 'react';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import Accordion from './Accordion.js';
-import AccordionItem from './AccordionItem.js';
+import Accordion from './Accordion';
+import AccordionItem from './AccordionItem';
 
 export default {
   title: 'Containers/Accordion',

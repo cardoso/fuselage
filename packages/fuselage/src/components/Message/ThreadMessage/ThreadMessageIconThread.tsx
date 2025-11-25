@@ -1,4 +1,4 @@
-import { ThreadMessageIcon } from './ThreadMessageIcon.js';
+import { ThreadMessageIcon } from './ThreadMessageIcon';
 
 export const ThreadMessageIconThread = () => (
   <ThreadMessageIcon name='thread' />

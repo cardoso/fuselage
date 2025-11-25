@@ -1,11 +1,11 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import { exampleAvatar, blankAvatar } from '../../../.storybook/helpers.js';
-import Box from '../Box/index.js';
-import Margins from '../Margins/index.js';
+import { exampleAvatar, blankAvatar } from '../../../.storybook/helpers';
+import Box from '../Box';
+import Margins from '../Margins';
 
-import { Chip } from './Chip.js';
+import { Chip } from './Chip';
 
 export default {
   title: 'Data Display/Chip',

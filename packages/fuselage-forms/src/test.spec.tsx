@@ -1,10 +1,9 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { render } from '@testing-library/react';
-import { userEvent } from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 import { axe } from 'jest-axe';
-import { expect, test } from 'vitest';
 
-import * as _stories from './Field/Field.stories.js';
+import * as _stories from './Field/Field.stories';
 
 // TODO: Fix select a11y violations
 // "Interactive controls must not be nested (nested-interactive)"
@@ -22,9 +21,10 @@ const {
 } = composedStories;
 
 const mapStories = (stories: Partial<typeof composedStories>) =>
-  Object.values(stories).map(
-    (Story) => [Story.storyName || 'Story', Story] as const,
-  );
+  Object.values(stories).map((Story: any) => [
+    Story.storyName || 'Story',
+    Story,
+  ]);
 
 const allTestCases = mapStories(composedStories);
 

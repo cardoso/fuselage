@@ -1,7 +1,7 @@
 import type { ComponentProps, ComponentType } from 'react';
 
-import { dark } from '../src/components/PaletteStyleTag/lib/themePalettes.js';
-import { Box, Icon } from '../src/index.js';
+import { Box, Icon } from '../src';
+import { dark } from '../src/components/PaletteStyleTag/lib/themePalettes';
 
 type PropsVariationSectionProps<TComponent extends ComponentType<any>> = {
   component: TComponent;

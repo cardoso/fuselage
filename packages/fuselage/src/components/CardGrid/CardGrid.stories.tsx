@@ -1,17 +1,11 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 import type { ComponentProps } from 'react';
 
-import { Button } from '../Button/index.js';
-import {
-  Card,
-  CardBody,
-  CardControls,
-  CardHeader,
-  CardTitle,
-} from '../Card/index.js';
-import { Icon } from '../Icon/index.js';
+import { Button } from '../Button';
+import { Card, CardBody, CardControls, CardHeader, CardTitle } from '../Card';
+import { Icon } from '../Icon';
 
-import { CardGrid } from './CardGrid.js';
+import { CardGrid } from './CardGrid';
 
 export default {
   title: 'Containers/CardGrid',

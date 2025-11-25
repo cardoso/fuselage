@@ -6,9 +6,9 @@ import {
   type ReactNode,
 } from 'react';
 
-import { cx, cxx } from '../../helpers/composeClassNames.js';
-import { StylingBox } from '../Box/index.js';
-import { Chevron } from '../Chevron/index.js';
+import { cx, cxx } from '../../helpers/composeClassNames';
+import { StylingBox } from '../Box';
+import { Chevron } from '../Chevron';
 
 export type AccordionItemProps = {
   children?: ReactNode;

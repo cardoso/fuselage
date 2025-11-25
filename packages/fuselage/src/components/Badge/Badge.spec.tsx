@@ -1,10 +1,10 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { screen } from '@testing-library/react';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import { Badge } from './Badge.js';
-import * as stories from './Badge.stories.js';
+import { Badge } from './Badge';
+import * as stories from './Badge.stories';
 
 const { Default, Primary, Secondary, Danger, Warning, Disabled } =
   composeStories(stories);

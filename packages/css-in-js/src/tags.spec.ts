@@ -1,7 +1,5 @@
-import { describe, it, expect } from 'vitest';
-
-import { css, keyframes } from './index.js';
-import { holdContext } from './tags.js';
+import { css, keyframes } from '.';
+import { holdContext } from './tags';
 
 describe('tags', () => {
   describe('css', () => {

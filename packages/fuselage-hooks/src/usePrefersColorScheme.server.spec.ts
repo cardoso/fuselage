@@ -1,6 +1,4 @@
-import { it, expect } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { usePrefersColorScheme } from './usePrefersColorScheme';
 
 it('should return false on the initial call', () => {

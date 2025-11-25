@@ -1,10 +1,8 @@
-import { it, expect, vi } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect';
 
 it('performs a useEffect', () => {
-  const watcher = vi.fn();
+  const watcher = jest.fn();
 
   renderHook(() => {
     useIsomorphicLayoutEffect(() => {

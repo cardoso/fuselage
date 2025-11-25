@@ -1,5 +1,5 @@
-import Box, { type BoxProps } from '../Box/index.js';
-import { Skeleton } from '../Skeleton/index.js';
+import Box, { type BoxProps } from '../Box';
+import { Skeleton } from '../Skeleton';
 
 export type InputBoxSkeletonProps = BoxProps;
 

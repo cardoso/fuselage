@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "module": "ESNext",
     "rootDir": "./src",
     "outDir": "./dist/esm"
   },
@@ -9,7 +10,7 @@
     "**/*.spec.ts",
     "**/*.spec.tsx",
     "**/*.stories.tsx",
-    "./vite.config.ts",
-    "./vitest.setup.ts"
+    "./jest.config.ts",
+    "./jest-setup.ts"
   ]
 }

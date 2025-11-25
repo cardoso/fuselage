@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import type { ComponentType } from 'react';
 
-import { Tabs } from './Tabs.js';
-import { TabsItem } from './TabsItem.js';
+import { Tabs } from './Tabs';
+import { TabsItem } from './TabsItem';
 
 export default {
   title: 'Navigation/Tabs',

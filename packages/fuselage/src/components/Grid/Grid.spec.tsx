@@ -1,6 +1,6 @@
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import { Grid } from './index.js';
+import { Grid } from '.';
 
 describe('[Grid Component]', () => {
   it('renders Grid without crashing', () => {

@@ -1,5 +1,17 @@
 # Change Log
 
+## 0.68.1
+
+### Patch Changes
+
+- [#1781](https://github.com/RocketChat/fuselage/pull/1781) [`ff70bf5`](https://github.com/RocketChat/fuselage/commit/ff70bf545ee0cbb903c0405a4221f2ce6e1edf32) Thanks [@dougfabris](https://github.com/dougfabris)! - fix(fuselage): Check for `NavbarGroup` to render divider between childs in `NavbarSection`
+
+## 0.68.0
+
+### Minor Changes
+
+- [#1779](https://github.com/RocketChat/fuselage/pull/1779) [`a6e5f37`](https://github.com/RocketChat/fuselage/commit/a6e5f37b43720ac6bf12b23bd31d09557488e0af) Thanks [@dougfabris](https://github.com/dougfabris)! - feat(fuselage): Render Divider between NavbarSection childs
+
 ## 0.67.0
 
 ### Minor Changes

@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import CodeSnippet from './CodeSnippet.js';
+import CodeSnippet from './CodeSnippet';
 
 export default {
   title: 'Data Display/CodeSnippet',

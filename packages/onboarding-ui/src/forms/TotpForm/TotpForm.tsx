@@ -8,18 +8,13 @@ import {
   FieldRow,
   FieldError,
 } from '@rocket.chat/fuselage';
-import {
-  ActionLink,
-  Form,
-  FormContainer,
-  FormFooter,
-} from '@rocket.chat/layout';
+import { ActionLink, Form } from '@rocket.chat/layout';
 import type { ReactElement } from 'react';
 import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
-import { TotpActionsWrapper } from './TotpForm.styles.js';
+import { TotpActionsWrapper } from './TotpForm.styles';
 
 export type TotpFormPayload = {
   totpCode: string;
@@ -54,7 +49,7 @@ const TotpForm = ({
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
-      <FormContainer>
+      <Form.Container>
         <FieldGroup>
           <Field>
             {isBackupCode ? (
@@ -91,8 +86,8 @@ const TotpForm = ({
             )}
           </Field>
         </FieldGroup>
-      </FormContainer>
-      <FormFooter>
+      </Form.Container>
+      <Form.Footer>
         <TotpActionsWrapper>
           <Button type='submit' loading={isValidating || isSubmitting} primary>
             {t('form.totpForm.button.text')}
@@ -103,7 +98,7 @@ const TotpForm = ({
               : t('form.totpForm.buttonBackupCode.text')}
           </ActionLink>
         </TotpActionsWrapper>
-      </FormFooter>
+      </Form.Footer>
     </Form>
   );
 };

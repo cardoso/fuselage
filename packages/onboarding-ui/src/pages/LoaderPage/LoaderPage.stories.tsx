@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import LoaderPage from './LoaderPage.js';
+import LoaderPage from './LoaderPage';
 
 const subtitles = [
   'Bringing rocket to launch position1  🚀',

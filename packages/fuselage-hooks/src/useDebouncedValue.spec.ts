@@ -1,11 +1,10 @@
 import { useReducer } from 'react';
-import { it, expect, vi, beforeAll } from 'vitest';
 
-import { renderHook, act } from './testing.ts';
+import { renderHook, act } from './testing';
 import { useDebouncedValue } from './useDebouncedValue';
 
 beforeAll(() => {
-  vi.useFakeTimers();
+  jest.useFakeTimers();
 });
 
 const delay = 100;
@@ -36,7 +35,7 @@ it('returns the newest value after timeout', () => {
   expect(result.current.debounced).toBe(0);
 
   act(() => {
-    vi.advanceTimersByTime(delay);
+    jest.advanceTimersByTime(delay);
   });
 
   expect(result.current.debounced).toBe(1);

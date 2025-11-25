@@ -1,6 +1,6 @@
-import * as DarkModeProvider from './DarkModeProvider.js';
+import * as DarkModeProvider from './DarkModeProvider';
 
-export * from './components/index.js';
-export * from './layouts/index.js';
+export * from './components';
+export * from './layouts';
 
 export { DarkModeProvider };

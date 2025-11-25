@@ -1,7 +1,7 @@
-import type { LameGlobalFlags } from './LameGlobalFlags.js';
-import { VbrMode } from './VbrMode.js';
-import type { Bitrate } from './bitrates.js';
-import { equals } from './math.js';
+import type { LameGlobalFlags } from './LameGlobalFlags';
+import { VbrMode } from './VbrMode';
+import type { Bitrate } from './bitrates';
+import { equals } from './math';
 
 interface ABRPreset {
   readonly kbps: number;

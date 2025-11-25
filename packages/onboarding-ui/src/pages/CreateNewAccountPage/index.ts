@@ -1,1 +1,1 @@
-export { default } from './CreateNewAccountPage.js';
+export { default } from './CreateNewAccountPage';

@@ -1,4 +1,4 @@
-import { Divider, type DividerProps } from '../Divider/index.js';
+import { Divider, type DividerProps } from '../Divider';
 
 export type OptionDividerProps = DividerProps;
 

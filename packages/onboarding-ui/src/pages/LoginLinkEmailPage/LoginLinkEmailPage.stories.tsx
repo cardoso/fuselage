@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import LoginLinkEmailPage from './LoginLinkEmailPage.js';
+import LoginLinkEmailPage from './LoginLinkEmailPage';
 
 export default {
   title: 'pages/LoginLinkEmailPage',

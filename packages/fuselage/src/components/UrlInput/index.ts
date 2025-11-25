@@ -1,1 +1,1 @@
-export { default } from './UrlInput.js';
+export { default } from './UrlInput';

@@ -1,10 +1,10 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 import { useState } from 'react';
 import { screen, userEvent } from 'storybook/test';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import { Slider } from './Slider.js';
+import { Slider } from './Slider';
 
 export default {
   title: 'Inputs/Slider',

@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import LoginForm from './LoginForm.js';
+import LoginForm from './LoginForm';
 
 export default {
   title: 'forms/LoginForm',

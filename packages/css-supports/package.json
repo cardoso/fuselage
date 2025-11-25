@@ -2,7 +2,6 @@
   "name": "@rocket.chat/css-supports",
   "version": "0.31.25",
   "description": "Memoized and SSR-compatible facade of CSS.supports API",
-  "type": "module",
   "homepage": "https://github.com/RocketChat/fuselage#readme",
   "bugs": {
     "url": "https://github.com/RocketChat/fuselage/issues"
@@ -17,17 +16,14 @@
     "name": "Rocket.Chat",
     "url": "https://rocket.chat/"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/esm/index.d.ts",
-      "import": "./dist/esm/index.js"
-    }
-  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "/dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.esm.json",
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
     "clean": "rimraf dist",
     "docs": "typedoc",
     "lint": "lint",
@@ -37,11 +33,11 @@
     "@rocket.chat/memo": "workspace:~"
   },
   "devDependencies": {
-    "eslint": "~9.37.0",
+    "eslint": "~9.39.1",
     "lint-all": "workspace:~",
     "prettier": "~3.6.2",
     "rimraf": "~6.0.1",
-    "typedoc": "~0.28.13",
+    "typedoc": "~0.28.14",
     "typescript": "~5.9.3"
   },
   "publishConfig": {

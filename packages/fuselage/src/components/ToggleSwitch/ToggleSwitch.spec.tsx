@@ -1,9 +1,9 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import * as stories from './ToggleSwitch.stories.js';
+import * as stories from './ToggleSwitch.stories';
 
 expect.extend(toHaveNoViolations);
 

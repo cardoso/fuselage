@@ -1,12 +1,6 @@
-export function use() {
-  return undefined;
-}
-export function unuse() {
-  return undefined;
-}
-export function ref() {
-  return undefined;
-}
-export function unref() {
-  return undefined;
-}
+module.exports = {
+  use: () => undefined,
+  unuse: () => undefined,
+  ref: () => undefined,
+  unref: () => undefined,
+};

@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { countries } from 'countries-list';
 
-import OrganizationInfoForm from './OrganizationInfoForm.js';
+import OrganizationInfoForm from './OrganizationInfoForm';
 
 export default {
   title: 'forms/OrganizationInfoForm',

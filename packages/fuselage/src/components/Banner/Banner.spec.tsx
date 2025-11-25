@@ -1,9 +1,9 @@
 import { screen } from '@testing-library/react';
 import { withResizeObserverMock } from 'testing-utils/mocks/withResizeObserverMock';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import Banner from './Banner.js';
+import Banner from './Banner';
 
 withResizeObserverMock();
 

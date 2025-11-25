@@ -1,7 +1,7 @@
 import type { AllHTMLAttributes, Ref } from 'react';
 import { forwardRef } from 'react';
 
-import { prependClassName } from '../../helpers/prependClassName.js';
+import { prependClassName } from '../../helpers/prependClassName';
 
 type MessageProps = AllHTMLAttributes<HTMLDivElement> & {
   clickable?: boolean;

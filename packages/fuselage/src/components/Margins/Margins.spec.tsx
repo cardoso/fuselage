@@ -1,8 +1,6 @@
-import { describe, it, expect } from 'vitest';
+import { render } from '../../testing';
 
-import { render } from '../../testing.js';
-
-import Margins from './index.js';
+import Margins from '.';
 
 describe('[Margins Component]', () => {
   it('renders without crashing', () => {

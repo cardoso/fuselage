@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import type { TableProps } from './Table.js';
-import { TableHeadContext } from './TableHead.js';
+import type { TableProps } from './Table';
+import { TableHeadContext } from './TableHead';
 
 type TableCellProps = TableProps & {
   align?: 'start' | 'center' | 'end' | 'justify' | object;

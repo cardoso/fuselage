@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import InformationTooltipTrigger from './InformationTooltipTrigger.js';
+import InformationTooltipTrigger from './InformationTooltipTrigger';
 
 it('renders without crashing', () => {
   render(<InformationTooltipTrigger text='' />);

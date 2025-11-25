@@ -1,8 +1,8 @@
-import { Menu } from '../../Menu/index.js';
+import { Menu } from '../../Menu';
 
-import { MessageToolbar } from './MessageToolbar.js';
-import { MessageToolbarItem } from './MessageToolbarItem.js';
-import { MessageToolbarWrapper } from './MessageToolbarWrapper.js';
+import { MessageToolbar } from './MessageToolbar';
+import { MessageToolbarItem } from './MessageToolbarItem';
+import { MessageToolbarWrapper } from './MessageToolbarWrapper';
 
 export default Object.assign(MessageToolbar, {
   /**

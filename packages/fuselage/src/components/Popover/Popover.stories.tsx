@@ -1,12 +1,12 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { cloneElement, isValidElement, useRef } from 'react';
 import { useOverlayTrigger } from 'react-aria';
 import { useOverlayTriggerState } from 'react-stately';
 
-import Button from '../Button/index.js';
-import Tile from '../Tile/index.js';
+import Button from '../Button';
+import Tile from '../Tile';
 
-import { Popover } from './Popover.js';
+import { Popover } from './Popover';
 
 export default {
   title: 'Layout/Popover',

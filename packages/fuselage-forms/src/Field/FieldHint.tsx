@@ -1,7 +1,7 @@
 import { FieldHint as FieldHintComponent } from '@rocket.chat/fuselage';
 import type { ReactNode, ComponentProps } from 'react';
 
-import { useFieldDescriptorId } from './FieldContext.js';
+import { useFieldDescriptorId } from './FieldContext';
 
 type FieldHintProps = { children: ReactNode } & ComponentProps<
   typeof FieldHintComponent

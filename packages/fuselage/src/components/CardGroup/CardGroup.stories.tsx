@@ -1,8 +1,8 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 import type { ComponentProps } from 'react';
 
-import { Badge } from '../Badge/index.js';
-import { Button, IconButton } from '../Button/index.js';
+import { Badge } from '../Badge';
+import { Button, IconButton } from '../Button';
 import {
   Card,
   CardBody,
@@ -11,11 +11,11 @@ import {
   CardHeader,
   CardRow,
   CardTitle,
-} from '../Card/index.js';
-import { Icon } from '../Icon/index.js';
-import { Tag } from '../Tag/index.js';
+} from '../Card';
+import { Icon } from '../Icon';
+import { Tag } from '../Tag';
 
-import { CardGroup } from './CardGroup.js';
+import { CardGroup } from './CardGroup';
 
 export default {
   title: 'Containers/CardGroup',

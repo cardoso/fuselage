@@ -1,1 +1,1 @@
-export { default } from './RegisterServerPage.js';
+export { default } from './RegisterServerPage';

@@ -1,10 +1,10 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { useRef } from 'react';
 
-import AnimatedVisibility from '../AnimatedVisibility/index.js';
-import Tile from '../Tile/index.js';
+import AnimatedVisibility from '../AnimatedVisibility';
+import Tile from '../Tile';
 
-import PositionAnimated from './PositionAnimated.js';
+import PositionAnimated from './PositionAnimated';
 
 export default {
   title: 'Layout/PositionAnimated',

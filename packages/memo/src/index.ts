@@ -1,1 +1,1 @@
-export { memoize, clear } from './memoize.js';
+export { memoize, clear } from './memoize';

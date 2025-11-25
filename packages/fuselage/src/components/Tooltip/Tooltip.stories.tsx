@@ -1,9 +1,9 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import Box from '../Box/index.js';
-import Margins from '../Margins/index.js';
+import Box from '../Box';
+import Margins from '../Margins';
 
-import Tooltip from './Tooltip.js';
+import Tooltip from './Tooltip';
 
 export default {
   title: 'Data Display/Tooltip',

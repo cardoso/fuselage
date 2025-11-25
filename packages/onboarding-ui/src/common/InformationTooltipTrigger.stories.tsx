@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import InformationTooltipTrigger from './InformationTooltipTrigger.js';
+import InformationTooltipTrigger from './InformationTooltipTrigger';
 
 export default {
   title: 'common/InformationTooltipTrigger',

@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from 'react';
 
-import type { MessageStatusIndicatorItem } from './MessageStatusIndicatorItem.js';
+import type { MessageStatusIndicatorItem } from './MessageStatusIndicatorItem';
 
 type MessageStatusPrivateIndicatorProps = {
   children?: ReactNode;

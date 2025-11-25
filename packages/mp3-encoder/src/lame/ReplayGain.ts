@@ -1,4 +1,4 @@
-import { GainAnalysis } from './GainAnalysis.js';
+import { GainAnalysis } from './GainAnalysis';
 
 export class ReplayGain {
   linprebuf = new Float32Array(GainAnalysis.MAX_ORDER * 2);

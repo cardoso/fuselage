@@ -1,13 +1,12 @@
 import { withResizeObserverMock } from 'testing-utils/mocks/withResizeObserverMock';
-import { it, expect, beforeAll, beforeEach, afterEach, vi } from 'vitest';
 
-import { renderHook, act } from './testing.ts';
+import { renderHook, act } from './testing';
 import { useResizeObserver } from './useResizeObserver';
 
 withResizeObserverMock();
 
 beforeAll(() => {
-  vi.useFakeTimers();
+  jest.useFakeTimers();
 });
 
 let element: HTMLElement;
@@ -51,7 +50,7 @@ it('gets the observed element size', async () => {
 
   // waits for debounced state mutation
   await act(async () => {
-    vi.advanceTimersByTime(0);
+    jest.advanceTimersByTime(0);
   });
 
   expect(result.current.borderBoxSize).toEqual({
@@ -76,7 +75,7 @@ it('gets the observed element size after resize', async () => {
 
   // waits for debounced state mutation
   await act(async () => {
-    vi.advanceTimersByTime(0);
+    jest.advanceTimersByTime(0);
   });
 
   expect(result.current.borderBoxSize).toEqual({
@@ -95,7 +94,7 @@ it('gets the observed element size after resize', async () => {
 
   // waits for debounced state mutation
   await act(async () => {
-    vi.advanceTimersByTime(0);
+    jest.advanceTimersByTime(0);
   });
 
   expect(result.current.borderBoxSize).toEqual({
@@ -124,7 +123,7 @@ it('debounces the observed element size', async () => {
   });
 
   await act(async () => {
-    vi.advanceTimersByTime(halfDelay);
+    jest.advanceTimersByTime(halfDelay);
   });
 
   expect(result.current.borderBoxSize).toEqual({
@@ -138,7 +137,7 @@ it('debounces the observed element size', async () => {
 
   // waits for debounced state mutation
   await act(async () => {
-    vi.advanceTimersByTime(halfDelay);
+    jest.advanceTimersByTime(halfDelay);
   });
 
   expect(result.current.borderBoxSize).toEqual({

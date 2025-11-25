@@ -1,1 +1,1 @@
-export { default } from './LoaderPage.js';
+export { default } from './LoaderPage';

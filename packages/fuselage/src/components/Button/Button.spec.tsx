@@ -1,10 +1,10 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { axe } from 'jest-axe';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import * as stories from './Button.stories.js';
-import * as iconButtonStories from './IconButton.stories.js';
+import * as stories from './Button.stories';
+import * as iconButtonStories from './IconButton.stories';
 
 const { Default, AsIconButton } = composeStories(stories);
 const { _IconButton, _IconButtonInfo, _IconButtonSuccess } =

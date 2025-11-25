@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import RegisterServerPage from './RegisterServerPage.js';
+import RegisterServerPage from './RegisterServerPage';
 
 export default {
   title: 'pages/RegisterServerPage',

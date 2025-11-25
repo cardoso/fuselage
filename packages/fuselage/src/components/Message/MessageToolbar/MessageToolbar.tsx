@@ -1,7 +1,7 @@
 import type { ComponentProps, ForwardedRef } from 'react';
 import { forwardRef } from 'react';
 
-import { ButtonGroup } from '../../index.js';
+import { ButtonGroup } from '../..';
 
 type MessageToolbarProps = ComponentProps<typeof ButtonGroup>;
 

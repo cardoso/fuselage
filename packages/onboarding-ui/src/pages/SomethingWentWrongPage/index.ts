@@ -1,1 +1,1 @@
-export { default } from './SomethingWentWrongPage.js';
+export { default } from './SomethingWentWrongPage';

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-import { IconButton } from '../Button/index.js';
+import { IconButton } from '../Button';
 
 type VariantType = 'default' | 'info' | 'success' | 'warning' | 'danger';
 

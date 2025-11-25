@@ -6,7 +6,7 @@ import {
 import type { ReactElement, ReactNode } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 
-import EmailCodeFallback from '../../common/EmailCodeFallback.js';
+import EmailCodeFallback from '../../common/EmailCodeFallback';
 
 type CheckYourEmailPageProps = {
   title?: string;

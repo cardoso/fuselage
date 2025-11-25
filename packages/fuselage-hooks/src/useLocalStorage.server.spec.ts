@@ -1,6 +1,4 @@
-import { it, expect } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { useLocalStorage } from './useStorage';
 
 it('returns a default value', () => {

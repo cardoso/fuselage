@@ -1,12 +1,12 @@
-import Form from './FormPageLayout/index.js';
-import List from './List/index.js';
+import Form from './FormPageLayout';
+import List from './List';
 
-export { default as TooltipWrapper } from './TooltipWrapper/index.js';
-export { default as BackgroundLayer } from './BackgroundLayer/index.js';
-export { default as ActionLink } from './ActionLink/index.js';
-export { default as LayoutLogo } from './LayoutLogo/index.js';
+export { default as TooltipWrapper } from './TooltipWrapper';
+export { default as BackgroundLayer } from './BackgroundLayer';
+export { default as ActionLink } from './ActionLink';
+export { default as LayoutLogo } from './LayoutLogo';
 
-export * from './FormPageLayout/index.js';
-export * from './List/index.js';
+export * from './FormPageLayout';
+export * from './List';
 
 export { Form, List };

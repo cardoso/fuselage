@@ -8,7 +8,7 @@ import type {
 } from 'react';
 import { forwardRef } from 'react';
 
-import { Input } from '../InputBox/index.js';
+import { Input } from '../InputBox';
 
 type SelectFilteredAnchorProps = {
   children: ReactNode;

@@ -1,1 +1,1 @@
-export { default } from './CreateCloudWorkspacePage.js';
+export { default } from './CreateCloudWorkspacePage';

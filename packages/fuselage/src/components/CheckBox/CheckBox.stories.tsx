@@ -1,12 +1,12 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
 import {
   DECORATOR_LABEL,
   PropsVariationSection,
-} from '../../../.storybook/helpers.js';
+} from '../../../.storybook/helpers';
 
-import { CheckBox } from './CheckBox.js';
+import { CheckBox } from './CheckBox';
 
 export default {
   title: 'Inputs/CheckBox',

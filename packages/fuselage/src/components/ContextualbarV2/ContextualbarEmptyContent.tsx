@@ -1,10 +1,10 @@
 import type { ComponentProps } from 'react';
 import { forwardRef, memo } from 'react';
 
-import type { Box } from '../index.js';
-import { StatesIcon, States, StatesTitle, StatesSubtitle } from '../index.js';
+import type { Box } from '..';
+import { StatesIcon, States, StatesTitle, StatesSubtitle } from '..';
 
-import ContextualbarContent from './ContextualbarContent.js';
+import ContextualbarContent from './ContextualbarContent';
 
 type ContextualbarEmptyContentProps = ComponentProps<typeof Box> & {
   icon?: ComponentProps<typeof StatesIcon>['name'];

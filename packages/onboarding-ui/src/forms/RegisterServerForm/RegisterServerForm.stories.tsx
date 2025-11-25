@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import RegisterServerForm from './RegisterServerForm.js';
+import RegisterServerForm from './RegisterServerForm';
 
 export default {
   title: 'forms/RegisterServerForm',

@@ -1,9 +1,8 @@
-import type { StoryFn, Meta, StoryContext } from '@storybook/react-vite';
+import type { StoryFn, Meta, StoryContext } from '@storybook/react-webpack5';
 import { cloneElement } from 'react';
+import flattenChildren from 'react-keyed-flatten-children';
 
-import { flattenChildren } from '../../helpers/flattenChildren.js';
-
-import Box from './Box.js';
+import Box from './Box';
 
 export default {
   title: 'Layout/Box/Colors',

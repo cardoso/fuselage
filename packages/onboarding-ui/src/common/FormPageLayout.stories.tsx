@@ -1,7 +1,7 @@
 import { Tile } from '@rocket.chat/fuselage';
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import FormPageLayout from './FormPageLayout.js';
+import FormPageLayout from './FormPageLayout';
 
 export default {
   title: 'common/FormPageLayout',

@@ -1,1 +1,1 @@
-export { Mp3Encoder } from './Mp3Encoder.js';
+export { Mp3Encoder } from './Mp3Encoder';

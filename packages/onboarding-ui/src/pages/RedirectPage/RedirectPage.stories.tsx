@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import RedirectPage from './RedirectPage.js';
+import RedirectPage from './RedirectPage';
 
 export default {
   title: 'pages/RedirectPage',

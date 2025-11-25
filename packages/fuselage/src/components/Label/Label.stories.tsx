@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import { Label } from './Label.js';
-import { LabelInfo } from './LabelInfo.js';
+import { Label } from './Label';
+import { LabelInfo } from './LabelInfo';
 
 export default {
   title: 'Inputs/Label',

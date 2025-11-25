@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import TaggedRocketChatLogo from './TaggedRocketChatLogo.js';
+import TaggedRocketChatLogo from './TaggedRocketChatLogo';
 
 it('renders without crashing', () => {
   render(<TaggedRocketChatLogo />);

@@ -1,6 +1,6 @@
 import type { AllHTMLAttributes, ComponentProps } from 'react';
 
-import Box from '../Box/Box.js';
+import Box from '../Box/Box';
 
 type StatesLinkProps = ComponentProps<typeof Box> &
   AllHTMLAttributes<HTMLAnchorElement>;

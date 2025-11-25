@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import { Badge } from './Badge.js';
+import { Badge } from './Badge';
 
 export default {
   title: 'Data Display/Badge',

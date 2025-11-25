@@ -1,7 +1,6 @@
 import { useReducer } from 'react';
-import { it, expect } from 'vitest';
 
-import { renderHook, act } from './testing.ts';
+import { renderHook, act } from './testing';
 import { usePrevious } from './usePrevious';
 
 it('returns previous values', () => {

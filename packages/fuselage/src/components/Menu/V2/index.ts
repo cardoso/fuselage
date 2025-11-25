@@ -7,11 +7,11 @@ import {
   OptionSkeleton,
   OptionTitle,
   OptionDescriptionBlock,
-} from '../../Option/index.js';
+} from '../../Option';
 
-export { default as MenuV2 } from './Menu.js';
-export { default as MenuItem } from './stately/MenuItem.js';
-export { default as MenuSection } from './stately/MenuSection.js';
+export { default as MenuV2 } from './Menu';
+export { default as MenuItem } from './stately/MenuItem';
+export { default as MenuSection } from './stately/MenuSection';
 
 export {
   OptionAvatar as MenuItemAvatar,

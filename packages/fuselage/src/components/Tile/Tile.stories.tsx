@@ -1,6 +1,6 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta } from '@storybook/react-webpack5';
 
-import Tile from './Tile.js';
+import Tile from './Tile';
 
 export default {
   title: 'Containers/Tile',

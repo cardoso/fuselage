@@ -1,5 +1,5 @@
-import type { LameInternalFlags } from './LameInternalFlags.js';
-import { BLKSIZE, BLKSIZE_s } from './constants.js';
+import type { LameInternalFlags } from './LameInternalFlags';
+import { BLKSIZE, BLKSIZE_s } from './constants';
 
 export class FFT {
   private window: Float32Array = new Float32Array(BLKSIZE);

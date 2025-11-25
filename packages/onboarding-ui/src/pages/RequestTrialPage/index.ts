@@ -1,1 +1,1 @@
-export { default } from './RequestTrialPage.js';
+export { default } from './RequestTrialPage';

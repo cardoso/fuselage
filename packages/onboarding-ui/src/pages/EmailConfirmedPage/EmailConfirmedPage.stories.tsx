@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import EmailConfirmedPage from './EmailConfirmedPage.js';
+import EmailConfirmedPage from './EmailConfirmedPage';
 
 export default {
   title: 'pages/EmailConfirmedPage',

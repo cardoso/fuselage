@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'react';
 
-import { Icon } from '../../Icon/index.js';
+import { Icon } from '../../Icon';
 
 export const MessageReactionAction = ({
   className,

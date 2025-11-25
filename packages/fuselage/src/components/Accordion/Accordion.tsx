@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 
-import { cx, cxx } from '../../helpers/composeClassNames.js';
-import { StylingBox } from '../Box/index.js';
-import type { StylingProps } from '../Box/stylingProps.js';
+import { cx, cxx } from '../../helpers/composeClassNames';
+import { StylingBox } from '../Box';
+import type { StylingProps } from '../Box/stylingProps';
 
 export type AccordionProps = {
   children: ReactNode;

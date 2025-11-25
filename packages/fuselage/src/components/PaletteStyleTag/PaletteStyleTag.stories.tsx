@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import Box from '../Box/index.js';
-import Button from '../Button/index.js';
+import Box from '../Box';
+import Button from '../Button';
 import {
   Card,
   CardBody,
@@ -9,12 +9,12 @@ import {
   CardControls,
   CardHeader,
   CardTitle,
-} from '../Card/index.js';
-import { Divider } from '../Divider/index.js';
-import { FramedIcon } from '../FramedIcon/index.js';
-import { ProgressBar } from '../ProgressBar/index.js';
+} from '../Card';
+import { Divider } from '../Divider';
+import { FramedIcon } from '../FramedIcon';
+import { ProgressBar } from '../ProgressBar';
 
-import PaletteStyleTag from './PaletteStyleTag.js';
+import PaletteStyleTag from './PaletteStyleTag';
 
 export default {
   title: 'Layout/PaletteStyleTag',

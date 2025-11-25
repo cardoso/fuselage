@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
 type TableRowProps = Omit<ComponentProps<typeof Box>, 'action'> & {
   action?: boolean;

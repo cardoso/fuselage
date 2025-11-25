@@ -1,9 +1,9 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import { PropsVariationSection } from '../../../.storybook/helpers.js';
-import { Icon } from '../Icon/index.js';
+import { PropsVariationSection } from '../../../.storybook/helpers';
+import { Icon } from '../Icon';
 
-import { TextInput } from './TextInput.js';
+import { TextInput } from './TextInput';
 
 export default {
   title: 'Inputs/TextInput',

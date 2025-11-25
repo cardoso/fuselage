@@ -1,7 +1,7 @@
 import type { ComponentProps, Ref } from 'react';
 import { forwardRef } from 'react';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
 type TileProps = ComponentProps<typeof Box>;
 

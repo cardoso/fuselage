@@ -1,7 +1,6 @@
 import { withMatchMediaMock } from 'testing-utils/mocks/withMatchMediaMock';
-import { it, expect } from 'vitest';
 
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { usePrefersColorScheme } from './usePrefersColorScheme';
 
 const setViewport = withMatchMediaMock();

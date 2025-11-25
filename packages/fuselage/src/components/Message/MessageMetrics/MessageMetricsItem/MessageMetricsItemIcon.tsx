@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 
-import { Icon } from '../../../../index.js';
+import { Icon } from '../../../..';
 
 type MessageMetricsItemIconProps = {
   name: 'thread' | 'user' | 'clock' | 'discussion';

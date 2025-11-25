@@ -1,11 +1,9 @@
-import { beforeAll, afterAll, expect, vi } from 'vitest';
-
 let spyConsoleError;
 let spyConsoleWarn;
 
 beforeAll(() => {
-  spyConsoleError = vi.spyOn(console, 'error');
-  spyConsoleWarn = vi.spyOn(console, 'warn');
+  spyConsoleError = jest.spyOn(console, 'error');
+  spyConsoleWarn = jest.spyOn(console, 'warn');
 });
 
 afterAll(() => {

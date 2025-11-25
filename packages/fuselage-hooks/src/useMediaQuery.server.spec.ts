@@ -1,6 +1,4 @@
-import { it, expect } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { useMediaQuery } from './useMediaQuery';
 
 it('returns false for undefined media query', () => {

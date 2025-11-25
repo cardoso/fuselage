@@ -1,15 +1,14 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { screen, waitFor } from '@testing-library/dom';
-import { userEvent } from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 import { axe } from 'jest-axe';
 import { VirtuosoMockContext } from 'react-virtuoso';
-import { describe, expect, vi, test } from 'vitest';
 
-import { render } from '../../testing.js';
-import { Option } from '../Option/index.js';
+import { render } from '../../testing';
+import { Option } from '../Option';
 
-import { PaginatedSelectFiltered } from './PaginatedSelectFiltered.js';
-import * as stories from './PaginatedSelectFiltered.stories.js';
+import { PaginatedSelectFiltered } from './PaginatedSelectFiltered';
+import * as stories from './PaginatedSelectFiltered.stories';
 
 const testCases = Object.values(composeStories(stories)).map((Story) => [
   Story.storyName || 'Story',
@@ -39,8 +38,8 @@ describe('[PaginatedSelectFiltered Component]', () => {
     const hiddenClass = 'rcx-select__wrapper--hidden';
     const placeholder = 'Select an option...';
     const defaultProps = {
-      setFilter: vi.fn(),
-      onChange: vi.fn(),
+      setFilter: jest.fn(),
+      onChange: jest.fn(),
       options: [{ value: 'item1', label: `Item #1` }],
     };
 
@@ -70,14 +69,14 @@ describe('[PaginatedSelectFiltered Component]', () => {
   });
 
   test('should render custom option when renderItem is provided', async () => {
-    const renderItem = vi.fn(({ label, value, index, ...props }) => (
+    const renderItem = jest.fn(({ label, value, index, ...props }) => (
       <Option {...props}>
         Label: {label}; Value: {value}; Index: {index}
       </Option>
     ));
     const defaultProps = {
-      setFilter: vi.fn(),
-      onChange: vi.fn(),
+      setFilter: jest.fn(),
+      onChange: jest.fn(),
       options: [
         { value: 'item1', label: 'Item 1' },
         { value: 'item2', label: 'Item 2' },

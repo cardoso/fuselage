@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import ResetPasswordPage from './ResetPasswordPage.js';
+import ResetPasswordPage from './ResetPasswordPage';
 
 export default {
   title: 'pages/ResetPasswordPage',

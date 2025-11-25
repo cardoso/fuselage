@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import RegisterOfflinePage from './index.js';
+import RegisterOfflinePage from '.';
 
 it('renders without crashing', () => {
   render(

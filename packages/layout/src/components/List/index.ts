@@ -1,5 +1,5 @@
-import List from './List.js';
-import ListItem from './ListItem.js';
+import List from './List';
+import ListItem from './ListItem';
 
 export default Object.assign(List, {
   /**

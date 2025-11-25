@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import TotpForm from './TotpForm.js';
+import TotpForm from './TotpForm';
 
 export default {
   title: 'forms/TotpForm',

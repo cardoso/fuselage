@@ -1,3 +1,3 @@
-export * from './SelectLegacy.js';
-export * from './Select.js';
-export * from './SelectFiltered.js';
+export * from './SelectLegacy';
+export * from './Select';
+export * from './SelectFiltered';

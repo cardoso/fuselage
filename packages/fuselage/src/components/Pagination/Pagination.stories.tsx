@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import { Pagination } from './Pagination.js';
+import { Pagination } from './Pagination';
 
 export default {
   title: 'Navigation/Pagination',

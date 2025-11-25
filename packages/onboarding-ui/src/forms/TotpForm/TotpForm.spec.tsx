@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import TotpForm from './TotpForm.js';
+import TotpForm from './TotpForm';
 
 it('renders without crashing', () => {
   render(

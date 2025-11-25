@@ -1,12 +1,12 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
 import {
   PropsVariationSection,
   DECORATOR_LABEL,
-} from '../../../.storybook/helpers.js';
+} from '../../../.storybook/helpers';
 
-import { RadioButton } from './RadioButton.js';
+import { RadioButton } from './RadioButton';
 
 export default {
   title: 'Inputs/RadioButton',

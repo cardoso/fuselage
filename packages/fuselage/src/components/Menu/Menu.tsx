@@ -1,11 +1,12 @@
 import type { UsePositionOptions } from '@rocket.chat/fuselage-hooks';
-import type { ComponentProps, ElementType, ReactNode } from 'react';
+import type { Keys as IconName } from '@rocket.chat/icons';
+import type { ComponentProps, ComponentType, ReactNode } from 'react';
 import { useRef, useCallback, useEffect } from 'react';
 
-import type Box from '../Box/index.js';
-import { IconButton } from '../Button/index.js';
-import { Options, useCursor, type OptionType } from '../Options/index.js';
-import PositionAnimated from '../PositionAnimated/index.js';
+import type Box from '../Box';
+import { IconButton } from '../Button';
+import { Options, useCursor, type OptionType } from '../Options';
+import PositionAnimated from '../PositionAnimated';
 
 type MenuProps = Omit<ComponentProps<typeof IconButton>, 'icon'> & {
   options: {
@@ -18,8 +19,14 @@ type MenuProps = Omit<ComponentProps<typeof IconButton>, 'icon'> & {
   };
   optionWidth?: ComponentProps<typeof Box>['width'];
   placement?: UsePositionOptions['placement'];
-  renderItem?: ElementType;
-  icon?: ComponentProps<typeof IconButton>['icon'];
+  renderItem?: ComponentType<{
+    role?: string;
+    label: ReactNode;
+    value: string | number;
+    selected?: boolean;
+    focus?: boolean;
+  }>;
+  icon?: IconName;
   maxHeight?: string | number;
 };
 

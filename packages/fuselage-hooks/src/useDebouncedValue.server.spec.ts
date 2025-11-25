@@ -1,12 +1,10 @@
-import { it, expect, vi, beforeEach } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { useDebouncedValue } from './useDebouncedValue';
 
 const delay = 100;
 
 beforeEach(() => {
-  vi.useFakeTimers();
+  jest.useFakeTimers();
 });
 
 it('returns the initial value', () => {

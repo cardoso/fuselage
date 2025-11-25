@@ -6,7 +6,5 @@
   "[pegjs]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
-  "vitest.disableWorkspaceWarning": true
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

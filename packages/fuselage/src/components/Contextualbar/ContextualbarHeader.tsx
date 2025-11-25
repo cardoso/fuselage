@@ -1,8 +1,8 @@
 import type { ComponentProps } from 'react';
 import { memo } from 'react';
 
-import Box from '../Box/index.js';
-import Margins from '../Margins/index.js';
+import Box from '../Box';
+import Margins from '../Margins';
 
 type ContextualbarHeaderProps = ComponentProps<typeof Box>;
 

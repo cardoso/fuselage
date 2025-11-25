@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import InvalidLinkPage from './InvalidLinkPage.js';
+import InvalidLinkPage from './InvalidLinkPage';
 
 it('renders without crashing', () => {
   render(<InvalidLinkPage onRequestNewLink={() => undefined} />);

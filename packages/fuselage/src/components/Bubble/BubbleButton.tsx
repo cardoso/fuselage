@@ -1,7 +1,7 @@
 import type { Keys as IconName } from '@rocket.chat/icons';
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
-import { Icon } from '../Icon/index.js';
+import { Icon } from '../Icon';
 
 type BubbleButtonProps = {
   onClick: () => void;

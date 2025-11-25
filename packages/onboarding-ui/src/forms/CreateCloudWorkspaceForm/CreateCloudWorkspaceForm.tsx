@@ -21,9 +21,9 @@ import type { FieldPathValue, SubmitHandler, Validate } from 'react-hook-form';
 import { useForm, Controller } from 'react-hook-form';
 import { useTranslation, Trans } from 'react-i18next';
 
-import Tooltip from '../../common/InformationTooltipTrigger.js';
+import Tooltip from '../../common/InformationTooltipTrigger';
 
-import WorkspaceUrlInput from './WorkspaceUrlInput.js';
+import WorkspaceUrlInput from './WorkspaceUrlInput';
 
 type CreateCloudWorkspaceFormPayload = {
   organizationEmail: string;

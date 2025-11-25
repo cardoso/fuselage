@@ -1,1 +1,4 @@
-export * from './AutoComplete.js';
+export {
+  default as AutoComplete,
+  type AutoCompleteProps,
+} from './AutoComplete';

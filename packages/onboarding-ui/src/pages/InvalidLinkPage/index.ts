@@ -1,1 +1,1 @@
-export { default } from './InvalidLinkPage.js';
+export { default } from './InvalidLinkPage';

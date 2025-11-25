@@ -1,6 +1,6 @@
-import type { Falsy } from '../types/Falsy.js';
+import type { Falsy } from '../types/Falsy';
 
-import { exhaustiveCheck } from './exhaustiveCheck.js';
+import { exhaustiveCheck } from './exhaustiveCheck';
 
 const withPrefix = (prefix?: string) => (modifier: string) =>
   prefix ? `${prefix}--${modifier}` : modifier;

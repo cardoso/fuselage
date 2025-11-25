@@ -1,1 +1,1 @@
-export { default } from './ConfirmationProcessPage.js';
+export { default } from './ConfirmationProcessPage';

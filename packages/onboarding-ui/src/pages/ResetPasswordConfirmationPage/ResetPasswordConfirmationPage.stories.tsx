@@ -1,6 +1,6 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import ResetPasswordConfirmationPage from './ResetPasswordConfirmationPage.js';
+import ResetPasswordConfirmationPage from './ResetPasswordConfirmationPage';
 
 export default {
   title: 'pages/ResetPasswordConfirmationPage',

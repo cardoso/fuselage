@@ -1,10 +1,8 @@
-import { vi, it, expect, describe } from 'vitest';
-
-import { memoize, clear } from './memoize.js';
+import { memoize, clear } from './memoize';
 
 it('should memoize a function that takes no parameter', () => {
-  const fn = vi.fn(() => 'foo');
-  const memoized = vi.fn(memoize(fn));
+  const fn = jest.fn(() => 'foo');
+  const memoized = jest.fn(memoize(fn));
 
   memoized(undefined);
   memoized(undefined);
@@ -17,8 +15,8 @@ it('should memoize a function that takes no parameter', () => {
 });
 
 it('should memoize a function that takes one parameter', () => {
-  const fn = vi.fn((i: number) => i + 1);
-  const memoized = vi.fn(memoize(fn));
+  const fn = jest.fn((i: number) => i + 1);
+  const memoized = jest.fn(memoize(fn));
 
   memoized(5);
   memoized(5);
@@ -37,9 +35,9 @@ it('should memoize a function that takes one parameter', () => {
 
 describe('clear', () => {
   it('should discard cached values of a memoized function', () => {
-    const fn = vi.fn(() => 'foo');
+    const fn = jest.fn(() => 'foo');
     const memoized = memoize(fn);
-    const spiedMemoized = vi.fn(memoized);
+    const spiedMemoized = jest.fn(memoized);
 
     spiedMemoized(undefined);
     spiedMemoized(undefined);
@@ -54,7 +52,7 @@ describe('clear', () => {
   });
 
   it('should do nothing when a non-memoized function is passed', () => {
-    const fn = vi.fn(() => 'foo');
+    const fn = jest.fn(() => 'foo');
 
     expect(() => clear(fn)).not.toThrow();
   });
@@ -62,17 +60,17 @@ describe('clear', () => {
 
 describe('timeout', () => {
   it('should memoize a function that takes one parameter and clear after x ms', () => {
-    vi.useFakeTimers();
+    jest.useFakeTimers();
 
-    const fn = vi.fn((i: number) => i + 1);
-    const memoized = vi.fn(memoize(fn, { maxAge: 3000 }));
+    const fn = jest.fn((i: number) => i + 1);
+    const memoized = jest.fn(memoize(fn, { maxAge: 3000 }));
 
     memoized(5);
-    vi.advanceTimersByTime(2000);
+    jest.advanceTimersByTime(2000);
     memoized(5);
-    vi.advanceTimersByTime(2000);
+    jest.advanceTimersByTime(2000);
     memoized(5);
-    vi.advanceTimersByTime(3000);
+    jest.advanceTimersByTime(3000);
     memoized(5);
 
     expect(fn).toHaveBeenCalledTimes(2);
@@ -84,15 +82,15 @@ describe('timeout', () => {
   });
 
   it('should memoize a function caching for two parameters and clearing both after x ms each one', () => {
-    vi.useFakeTimers();
+    jest.useFakeTimers();
 
-    const fn = vi.fn((i: number) => i + 1);
-    const memoized = vi.fn(memoize(fn, { maxAge: 3000 }));
+    const fn = jest.fn((i: number) => i + 1);
+    const memoized = jest.fn(memoize(fn, { maxAge: 3000 }));
 
     memoized(5);
-    vi.advanceTimersByTime(2000);
+    jest.advanceTimersByTime(2000);
     memoized(6);
-    vi.advanceTimersByTime(2000);
+    jest.advanceTimersByTime(2000);
 
     memoized(6);
     memoized(5);

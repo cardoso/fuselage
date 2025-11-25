@@ -1,29 +1,26 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "target": "es2024",
+    "module": "es2022",
+    "moduleResolution": "bundler",
     "verbatimModuleSyntax": true,
     "lib": ["ES2020", "DOM"],
-    "types": ["@testing-library/jest-dom"],
     "downlevelIteration": true,
     "outDir": "./dist",
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowJs": true,
     "jsx": "react-jsx",
     "erasableSyntaxOnly": true,
-    "resolvePackageJsonImports": true,
-    "esModuleInterop": true,
-    "allowArbitraryExtensions": true,
-    "emitDeclarationOnly": true
+    "isolatedModules": true
   },
   "include": [
     "./src",
     "./.storybook/**/*",
-    "./vite.config.ts",
-    "./vitest.setup.ts"
+    "./jest.config.ts",
+    "./jest-setup.ts"
   ],
   "exclude": ["./dist", "./storybook-static/", "./*.js"]
 }

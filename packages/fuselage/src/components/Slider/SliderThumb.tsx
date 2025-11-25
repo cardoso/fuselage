@@ -7,8 +7,8 @@ import {
   VisuallyHidden,
 } from 'react-aria';
 
-import { Palette } from '../../Theme.js';
-import { useStyle } from '../../hooks/useStyle.js';
+import { Palette } from '../../Theme';
+import { useStyle } from '../../hooks/useStyle';
 
 export const SliderThumb = (props: any) => {
   const { state, trackRef, index } = props;

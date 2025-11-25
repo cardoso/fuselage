@@ -1,11 +1,10 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { screen } from '@testing-library/react';
-import { userEvent } from '@testing-library/user-event';
-import { describe, it, expect } from 'vitest';
+import userEvent from '@testing-library/user-event';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import * as stories from './Dropdown.stories.js';
+import * as stories from './Dropdown.stories';
 
 const { Default } = composeStories(stories);
 

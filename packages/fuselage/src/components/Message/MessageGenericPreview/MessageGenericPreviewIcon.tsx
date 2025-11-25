@@ -1,5 +1,5 @@
-import type { IconProps } from '../../Icon/index.js';
-import { Icon } from '../../Icon/index.js';
+import type { IconProps } from '../../Icon';
+import { Icon } from '../../Icon';
 
 export type MessageGenericPreviewIconProps = IconProps & {
   type: string;

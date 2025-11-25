@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import OauthAuthorizationPage from './OauthAuthorizationPage.js';
+import OauthAuthorizationPage from './OauthAuthorizationPage';
 
 export default {
   title: 'pages/OauthAuthorizationPage',

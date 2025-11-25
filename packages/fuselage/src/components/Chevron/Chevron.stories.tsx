@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import { Chevron } from './Chevron.js';
+import { Chevron } from './Chevron';
 
 export default {
   title: 'Data Display/Chevron',

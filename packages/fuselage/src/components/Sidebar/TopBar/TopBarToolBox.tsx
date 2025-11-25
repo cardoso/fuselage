@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
 
-import { SidebarDivider } from '../SidebarDivider.js';
+import { SidebarDivider } from '../SidebarDivider';
 
-import { TopBar } from './TopBar.js';
-import { TopBarWrapper } from './TopBarWrapper.js';
+import { TopBar } from './TopBar';
+import { TopBarWrapper } from './TopBarWrapper';
 
 type TopBarToolBoxProps = {
   children?: ReactNode;

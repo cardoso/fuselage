@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import EmailConfirmedPage from './EmailConfirmedPage.js';
+import EmailConfirmedPage from './EmailConfirmedPage';
 
 it('renders without crashing', () => {
   render(<EmailConfirmedPage />);

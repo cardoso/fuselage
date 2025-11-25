@@ -1,3 +1,3 @@
-import { Scrollable } from './Scrollable.js';
+import { Scrollable } from './Scrollable';
 
 export default Scrollable;

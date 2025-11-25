@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'react';
 
-import { SidebarDivider } from './SidebarDivider.js';
+import { SidebarDivider } from './SidebarDivider';
 
 export const SidebarSection = (props: HTMLAttributes<HTMLDivElement>) => (
   <div>

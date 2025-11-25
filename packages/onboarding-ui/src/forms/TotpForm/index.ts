@@ -1,1 +1,1 @@
-export { default } from './TotpForm.js';
+export { default } from './TotpForm';

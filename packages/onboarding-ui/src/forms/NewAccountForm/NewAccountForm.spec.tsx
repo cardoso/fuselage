@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import NewAccountForm from './NewAccountForm.js';
+import NewAccountForm from './NewAccountForm';
 
 it('renders without crashing', () => {
   render(

@@ -1,11 +1,10 @@
-import { composeStories } from '@storybook/react-vite';
+import { composeStories } from '@storybook/react-webpack5';
 import { getByRole, screen } from '@testing-library/react';
-import { userEvent } from '@testing-library/user-event';
-import { describe, expect, test } from 'vitest';
+import userEvent from '@testing-library/user-event';
 
-import * as stories from './ToastBar.stories.js';
-import ToastBarProvider from './ToastBarProvider.js';
-import { render } from './testing.js';
+import * as stories from './ToastBar.stories';
+import ToastBarProvider from './ToastBarProvider';
+import { render } from './testing';
 
 const { Default, TopEnd } = composeStories(stories, {
   decorators: [

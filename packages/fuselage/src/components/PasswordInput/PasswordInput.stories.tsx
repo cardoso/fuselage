@@ -1,9 +1,9 @@
-import type { Meta, StoryFn } from '@storybook/react-vite';
+import type { Meta, StoryFn } from '@storybook/react-webpack5';
 
-import { PropsVariationSection } from '../../../.storybook/helpers.js';
-import { Icon } from '../Icon/index.js';
+import { PropsVariationSection } from '../../../.storybook/helpers';
+import { Icon } from '../Icon';
 
-import PasswordInput from './PasswordInput.js';
+import PasswordInput from './PasswordInput';
 
 export default {
   title: 'Inputs/PasswordInput',

@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import type { ComponentType } from 'react';
 import { action } from 'storybook/actions';
 
-import { Avatar, Icon, Box, Tag, Divider, SidebarBanner } from '../../index.js';
+import { Avatar, Icon, Box, Tag, Divider, SidebarBanner } from '../..';
 
 import Sidebar, {
   SidebarItemContainer,
@@ -20,7 +20,7 @@ import Sidebar, {
   TopBarAction,
   SidebarFooterHighlight,
   SidebarItemIcon,
-} from './index.js';
+} from '.';
 
 export default {
   title: 'Sidebar/Sidebar',

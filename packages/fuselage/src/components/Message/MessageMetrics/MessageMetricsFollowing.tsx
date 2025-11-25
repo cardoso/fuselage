@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactElement } from 'react';
 
-import { IconButton } from '../../Button/index.js';
+import { IconButton } from '../../Button';
 
 type MessageMetricsFollowingProps = {
   name: 'bell' | 'bell-off';

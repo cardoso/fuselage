@@ -1,11 +1,9 @@
-import { it, expect, vi } from 'vitest';
-
-import { renderHook } from './testing.ts';
+import { renderHook } from './testing';
 import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect';
 
 it('performs a useLayoutEffect', () => {
-  const cleanup = vi.fn();
-  const effect = vi.fn(() => cleanup);
+  const cleanup = jest.fn();
+  const effect = jest.fn(() => cleanup);
 
   const { unmount } = renderHook(() => {
     useIsomorphicLayoutEffect(effect);

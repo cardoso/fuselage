@@ -1,8 +1,8 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import Button from '../Button/index.js';
+import Button from '../Button';
 
-import { ButtonGroup } from './ButtonGroup.js';
+import { ButtonGroup } from './ButtonGroup';
 
 export default {
   title: 'Inputs/ButtonGroup',

@@ -1,4 +1,4 @@
-import type { StatusBulletProps } from '../StatusBullet.js';
+import type { StatusBulletProps } from '../StatusBullet';
 
 const Loading = ({ size, className, ...props }: StatusBulletProps) => (
   <svg

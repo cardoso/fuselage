@@ -1,1 +1,1 @@
-export { default } from './LayoutLogo.js';
+export { default } from './LayoutLogo';

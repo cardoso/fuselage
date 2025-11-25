@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import SomethingWentWrongPage from './SomethingWentWrongPage.js';
+import SomethingWentWrongPage from './SomethingWentWrongPage';
 
 it('renders without crashing', () => {
   render(<SomethingWentWrongPage />);

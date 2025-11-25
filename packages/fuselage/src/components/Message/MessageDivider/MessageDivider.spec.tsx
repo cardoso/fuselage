@@ -1,6 +1,6 @@
-import { render } from '../../../testing.js';
+import { render } from '../../../testing';
 
-import { MessageDivider } from './index.js';
+import { MessageDivider } from '.';
 
 it('renders without crashing', () => {
   render(<MessageDivider />);

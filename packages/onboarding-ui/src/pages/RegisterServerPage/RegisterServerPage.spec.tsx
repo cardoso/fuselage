@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-import { it } from 'vitest';
 
-import RegisterServerPage from './RegisterServerPage.js';
+import RegisterServerPage from './RegisterServerPage';
 
 it('renders without crashing', () => {
   render(

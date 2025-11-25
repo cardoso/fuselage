@@ -26,8 +26,9 @@ to: packages/<%=package%>/package.json
     "/dist"
   ],
   "scripts": {
+    ".:build:cjs": "tsc -p tsconfig.cjs.json",
     ".:build:esm": "tsc -p tsconfig.esm.json",
-    "build": "run .:build:esm",
+    "build": "run .:build:esm && run .:build:cjs",
     "clean": "rimraf dist",
     "docs": "typedoc",
     "lint": "lint",

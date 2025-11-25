@@ -1,4 +1,4 @@
-import { SBMAX_l, SBMAX_s } from './constants.js';
+import { SBMAX_l, SBMAX_s } from './constants';
 
 export class PSY {
   mask_adjust = 0;

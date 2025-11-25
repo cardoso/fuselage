@@ -1,12 +1,9 @@
-import type { ReactNode, Ref } from 'react';
+import type { Ref } from 'react';
 import { forwardRef } from 'react';
 
-import { InputBox, type InputBoxProps } from '../InputBox/index.js';
+import { InputBox, type InputBoxProps } from '../InputBox';
 
-type UrlInputProps = Omit<InputBoxProps, 'type'> & {
-  addon?: ReactNode;
-  error?: string;
-};
+type UrlInputProps = Omit<InputBoxProps, 'type'>;
 
 const UrlInput = forwardRef(function UrlInput(
   props: UrlInputProps,

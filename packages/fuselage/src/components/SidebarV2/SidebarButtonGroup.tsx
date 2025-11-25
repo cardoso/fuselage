@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 
-import { ButtonGroup } from '../ButtonGroup/index.js';
+import { ButtonGroup } from '../ButtonGroup';
 
 export const SidebarButtonGroup = ({
   align = 'end',

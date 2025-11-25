@@ -1,1 +1,1 @@
-export { default } from './CreateNewPasswordPage.js';
+export { default } from './CreateNewPasswordPage';

@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { it, expect, vi } from 'vitest';
 
-import { act, renderHook } from './testing.ts';
+import { act, renderHook } from './testing';
 import { useEffectEvent } from './useEffectEvent';
 
 it('returns a stable callback', () => {
-  const fn = vi.fn();
+  const fn = jest.fn();
 
   const { result, rerender } = renderHook(() => useEffectEvent(fn));
 
@@ -19,7 +18,7 @@ it('returns a stable callback', () => {
 });
 
 it('returns a callback that invokes the mutable one', () => {
-  const fn = vi.fn();
+  const fn = jest.fn();
 
   const { result } = renderHook(() => useEffectEvent(fn));
 
@@ -29,8 +28,8 @@ it('returns a callback that invokes the mutable one', () => {
 });
 
 it('handles mutations in callback', () => {
-  const firstCallback = vi.fn();
-  const secondCallback = vi.fn();
+  const firstCallback = jest.fn();
+  const secondCallback = jest.fn();
 
   const { result } = renderHook(() => {
     const [callback, setCallback] = useState(() => firstCallback);

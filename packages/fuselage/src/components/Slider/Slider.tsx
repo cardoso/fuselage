@@ -5,11 +5,11 @@ import type { AriaSliderProps } from 'react-aria';
 import { useNumberFormatter, useSlider } from 'react-aria';
 import { useSliderState } from 'react-stately';
 
-import { useStyle } from '../../hooks/useStyle.js';
+import { useStyle } from '../../hooks/useStyle';
 
-import { SliderHead } from './SliderHead.js';
-import { SliderThumb } from './SliderThumb.js';
-import { SliderTrack } from './SliderTrack.js';
+import { SliderHead } from './SliderHead';
+import { SliderThumb } from './SliderThumb';
+import { SliderTrack } from './SliderTrack';
 
 type SliderProps<T extends number | number[]> = AriaAttributes & {
   /**

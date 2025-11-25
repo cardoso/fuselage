@@ -1,1 +1,1 @@
-export { default } from './BackgroundLayer.js';
+export { default } from './BackgroundLayer';

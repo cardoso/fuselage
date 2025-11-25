@@ -1,7 +1,7 @@
 import type { Keys as Icons } from '@rocket.chat/icons';
 import type { HTMLAttributes } from 'react';
 
-import { Icon } from '../../Icon/index.js';
+import { Icon } from '../../Icon';
 
 export const SidebarItemAction = ({
   children,

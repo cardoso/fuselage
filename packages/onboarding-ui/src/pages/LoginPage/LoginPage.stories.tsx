@@ -1,6 +1,6 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import LoginPage from './LoginPage.js';
+import LoginPage from './LoginPage';
 
 export default {
   title: 'pages/LoginPage',

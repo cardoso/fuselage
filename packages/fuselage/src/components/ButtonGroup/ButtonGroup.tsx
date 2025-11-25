@@ -1,8 +1,8 @@
 import type { HTMLAttributes, Ref } from 'react';
 import { forwardRef } from 'react';
 
-import { appendClassName } from '../../helpers/appendClassName.js';
-import { patchChildren } from '../../helpers/patchChildren.js';
+import { appendClassName } from '../../helpers/appendClassName';
+import { patchChildren } from '../../helpers/patchChildren';
 
 type ButtonGroupProps = {
   align?: 'start' | 'center' | 'end';

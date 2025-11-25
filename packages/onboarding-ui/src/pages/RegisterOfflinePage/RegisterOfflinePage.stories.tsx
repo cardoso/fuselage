@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 import { action } from 'storybook/actions';
 
-import RegisterOfflinePage from './RegisterOfflinePage.js';
+import RegisterOfflinePage from './RegisterOfflinePage';
 
 export default {
   title: 'pages/RegisterOfflinePage',

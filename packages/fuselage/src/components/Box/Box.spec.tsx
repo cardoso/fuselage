@@ -1,9 +1,8 @@
 import { css } from '@rocket.chat/css-in-js';
-import { describe, it, expect } from 'vitest';
 
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import Box from './Box.js';
+import Box from '.';
 
 describe('[Box Component]', () => {
   it('renders without crashing', () => {

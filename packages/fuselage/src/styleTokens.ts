@@ -1,4 +1,4 @@
-import tokenTypography from '@rocket.chat/fuselage-tokens/typography.json' with { type: 'json' };
+import tokenTypography from '@rocket.chat/fuselage-tokens/typography.json';
 import { memoize } from '@rocket.chat/memo';
 import invariant from 'invariant';
 
@@ -17,13 +17,13 @@ import {
   throwErrorOnInvalidToken,
   isBadgeColor,
   badgeBackgroundColors,
-} from './Theme.js';
-import { getPaletteColor } from './getPaletteColor.js';
+} from './Theme';
+import { getPaletteColor } from './getPaletteColor';
 import {
   toCSSColorValue,
   toCSSFontValue,
   toCSSValue,
-} from './helpers/toCSSValue.js';
+} from './helpers/toCSSValue';
 
 const measure = (
   computeSpecialValue?: (value: string) => null | undefined | string,

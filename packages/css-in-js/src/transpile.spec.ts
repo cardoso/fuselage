@@ -1,6 +1,4 @@
-import { describe, it, expect } from 'vitest';
-
-import { transpile, createTranspileMiddleware } from './transpile.js';
+import { transpile, createTranspileMiddleware } from './transpile';
 
 it('transpiles simple properties', () => {
   expect(transpile('div', 'color: inherit;')).toMatch('div{color:inherit;}');
@@ -15,13 +13,12 @@ it('transpiles with vendor prefixing', () => {
 const property = (
   property: string,
   ...characteristics: ((property: string) => void)[]
-): void => {
+): void =>
   describe(property, () => {
     for (const characteristic of characteristics) {
       characteristic(property);
     }
   });
-};
 
 const isSupported = (vendorPrefixedProperty?: string) => (property: string) =>
   it(`supports ${property}`, () => {

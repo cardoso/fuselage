@@ -1,6 +1,6 @@
 import type { ImgHTMLAttributes } from 'react';
 
-import { prependClassName } from '../../../helpers/prependClassName.js';
+import { prependClassName } from '../../../helpers/prependClassName';
 
 type MessageGenericPreviewImageProps = {
   url: string;

@@ -1,6 +1,6 @@
-import { render } from '../../testing.js';
+import { render } from '../../testing';
 
-import Flex from './index.js';
+import Flex from '.';
 
 describe('[Flex Component]', () => {
   it('renders Flex.Container without crashing', () => {

@@ -1,7 +1,7 @@
-import type { StoryFn, Meta } from '@storybook/react-vite';
+import type { StoryFn, Meta } from '@storybook/react-webpack5';
 
-import { setStoryDescription } from '../../helpers/setStoryDescription.js';
-import { Button, ButtonGroup, Callout } from '../../index.js';
+import { Button, ButtonGroup, Callout } from '../..';
+import { setStoryDescription } from '../../helpers/setStoryDescription';
 
 export default {
   title: 'Feedback/Callout',

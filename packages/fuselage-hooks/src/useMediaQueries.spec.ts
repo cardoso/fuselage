@@ -1,7 +1,6 @@
 import { withMatchMediaMock } from 'testing-utils/mocks/withMatchMediaMock';
-import { it, expect } from 'vitest';
 
-import { renderHook, act } from './testing.ts';
+import { renderHook, act } from './testing';
 import { useMediaQueries } from './useMediaQueries';
 
 const setViewport = withMatchMediaMock();

@@ -1,8 +1,8 @@
-import { appendClassName } from '../../helpers/appendClassName.js';
-import { useStyle } from '../../hooks/useStyle.js';
+import { appendClassName } from '../../helpers/appendClassName';
+import { useStyle } from '../../hooks/useStyle';
 
-import type { StylingProps } from './stylingProps.js';
-import { extractStylingProps } from './stylingProps.js';
+import type { StylingProps } from './stylingProps';
+import { extractStylingProps } from './stylingProps';
 
 export const useStylingProps = <TProps extends { className?: string }>(
   originalProps: TProps,

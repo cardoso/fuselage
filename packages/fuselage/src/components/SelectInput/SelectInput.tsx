@@ -1,10 +1,10 @@
 import type { FormEvent, ReactNode, Ref } from 'react';
 import { forwardRef, useState, useCallback } from 'react';
 
-import { Icon } from '../Icon/index.js';
-import { InputBox, type InputBoxProps } from '../InputBox/index.js';
+import { Icon } from '../Icon';
+import { InputBox, type InputBoxProps } from '../InputBox';
 
-import SelectInputPlaceholder from './SelectInputPlaceholder.js';
+import SelectInputPlaceholder from './SelectInputPlaceholder';
 
 type SelectInputOptions = readonly (readonly [string, string])[];
 

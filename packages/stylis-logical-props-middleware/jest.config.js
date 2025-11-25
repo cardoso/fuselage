@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   preset: 'ts-jest',
   errorOnDeprecated: true,
   testMatch: ['<rootDir>/src/**/*.spec.ts'],

@@ -1,8 +1,8 @@
 import type { ComponentProps } from 'react';
 
-import Box from '../Box/index.js';
+import Box from '../Box';
 
-import { TabsItem } from './TabsItem.js';
+import { TabsItem } from './TabsItem';
 
 type TabsProps = ComponentProps<typeof Box> & { divider?: boolean };
 

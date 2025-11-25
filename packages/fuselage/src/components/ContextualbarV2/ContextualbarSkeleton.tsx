@@ -1,12 +1,12 @@
 import type { ReactElement, ComponentProps } from 'react';
 import { memo } from 'react';
 
-import { Box, Skeleton } from '../index.js';
+import { Box, Skeleton } from '..';
 
 import {
   ContextualbarV2 as Contextualbar,
   ContextualbarV2Header as ContextualbarHeader,
-} from './index.js';
+} from '.';
 
 const ContextualbarSkeleton = (
   props: ComponentProps<typeof Box>,

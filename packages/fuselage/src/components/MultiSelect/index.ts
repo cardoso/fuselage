@@ -1,4 +1,4 @@
-import { MultiSelect } from './MultiSelect.js';
-import { MultiSelectFiltered } from './MultiSelectFiltered.js';
+import { MultiSelect } from './MultiSelect';
+import { MultiSelectFiltered } from './MultiSelectFiltered';
 
 export { MultiSelect, MultiSelectFiltered };

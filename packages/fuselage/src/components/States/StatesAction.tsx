@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 
-import { Button } from '../index.js';
+import { Button } from '..';
 
 type StatesActionProps = ComponentProps<typeof Button>;
 
